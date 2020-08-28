@@ -13,6 +13,8 @@
 		1F3696C724F95FD8003FB067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3696C524F95FD8003FB067 /* Main.storyboard */; };
 		1F3696C924F95FD9003FB067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3696C824F95FD9003FB067 /* Assets.xcassets */; };
 		1F3696CC24F95FD9003FB067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3696CA24F95FD9003FB067 /* LaunchScreen.storyboard */; };
+		1F3696D424F97662003FB067 /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3696D324F97662003FB067 /* DarkModeViewController.swift */; };
+		1F3696D624F976C1003FB067 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3696D524F976C1003FB067 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1F3696C824F95FD9003FB067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3696CB24F95FD9003FB067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3696CD24F95FD9003FB067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3696D324F97662003FB067 /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
+		1F3696D524F976C1003FB067 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1F3696C124F95FD8003FB067 /* SceneDelegate.swift */,
 				1F3696C324F95FD8003FB067 /* ViewController.swift */,
 				1F3696C524F95FD8003FB067 /* Main.storyboard */,
+				1F3696D524F976C1003FB067 /* InfoViewController.swift */,
+				1F3696D324F97662003FB067 /* DarkModeViewController.swift */,
 				1F3696C824F95FD9003FB067 /* Assets.xcassets */,
 				1F3696CA24F95FD9003FB067 /* LaunchScreen.storyboard */,
 				1F3696CD24F95FD9003FB067 /* Info.plist */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3696C424F95FD8003FB067 /* ViewController.swift in Sources */,
+				1F3696D424F97662003FB067 /* DarkModeViewController.swift in Sources */,
 				1F3696C024F95FD8003FB067 /* AppDelegate.swift in Sources */,
 				1F3696C224F95FD8003FB067 /* SceneDelegate.swift in Sources */,
+				1F3696D624F976C1003FB067 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
