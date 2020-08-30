@@ -9,22 +9,25 @@
 import UIKit
 
 class InfoViewController: UIViewController {
-
+    
+    @IBOutlet weak var appInfoLabel: UILabel!
+    
+    var infoText = "Temperature converter shows you the temperature in both units of measurement - Celsius and Fahrenheit."
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if !infoText.isEmpty{
+            appInfoLabel.text = infoText
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        print("Dismiss VC")
     }
-    */
+    
+   
 
 }

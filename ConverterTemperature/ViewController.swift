@@ -21,13 +21,13 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fahrenheitLabel.text = "32º F"
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         print("value: ", Int(sender.value))
         let tempCelsius = Int(sender.value)
@@ -37,5 +37,16 @@ class ViewController: UIViewController {
         
     }
     
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "infoSegue"{
+    // Get the new view controller using segue.destination.
+            let vc = segue.destination as! InfoViewController
+    // Pass the selected object to the new view controller.
+            vc.infoText = "Temperature converter shows you the temperature in both units of measurement - Celsius and Fahrenheit."
+        }
+    }
 }
-
